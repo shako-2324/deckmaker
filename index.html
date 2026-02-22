@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>らんだむでっきめーかー</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="menu_background">
+        <ul id="menu_box">
+            <label><li><input type="radio" name="menu" value="1" id="radio_menu_1">使い方</li></label>
+            <label><li><input type="radio" name="menu" value="2" id="radio_menu_2">セーブ</li></label>
+            <label><li><input type="radio" name="menu" value="3" id="radio_menu_3">ヒーロー</li></label>
+            <label><li><input type="radio" name="menu" value="4" id="radio_menu_4">カード</li></label>
+            <label><li><input type="radio" name="menu" value="5" id="radio_menu_5">生成</li></label>
+        </ul>
+    </div>
+    <div id="menu1_id" class="contents">
+
+        <div class="menu1_background">
+            <br>
+            <div class="menu1_text">
+                <h1>見出し</h1>
+                <h2>説明</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="menu2_id" class="contents">
+        <div class="background">
+            <input type="button" id="save_btn" value="書き出し">
+            <div id="code_output">
+
+            </div>
+            <input type="text" id="load_text">
+            <input type="button" id="load_btn" value="読み込み">
+            <div id="code_input">
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+    <div id="menu3_id" class="contents">
+        <div class="background">
+            <div class="role_index">　<span class="orange_bullet">▼</span>　アタッカー</div>
+            <div id="attackerlist">
+            </div>
+            <div class="role_index">　<span class="orange_bullet">▼</span>　ガンナー</div>
+            <div id="gunnerlist">
+            </div>
+            <div class="role_index">　<span class="orange_bullet">▼</span>　タンク</div>
+            <div id="tanklist">
+            </div>
+            <div class="role_index">　<span class="orange_bullet">▼</span>　スプリンター</div>
+            <div id="sprinterlist">
+            </div>
+            <div class="btn_box">
+                <input type="button" id="hero_nomal_allcheck_btn" value="一括ON:恒常">
+                <input type="button" id="hero_special_allcheck_btn" value="一括ON:コラボ">
+                <input type="button" id="hero_uncheck_btn" value="リセット">
+            </div>
+            <div class="space"></div>
+        </div>
+        
+    </div>
+    <div id="menu4_id" class="contents">
+        <div class="background">
+            <div id="card_tab_1" class="contents_card active">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　近距離</div>
+                <div id="listbox_card_1"></div>
+                <div id="listbox_card_1sp"></div>
+            </div>
+            <div id="card_tab_2" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　遠距離</div>
+                <div id="listbox_card_2"></div>
+                <div id="listbox_card_2sp"></div>
+            </div>
+            <div id="card_tab_3" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　連続</div>
+                <div id="listbox_card_3"></div>
+                <div id="listbox_card_3sp"></div>
+            </div>
+            <div id="card_tab_4" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　周囲</div>
+                <div id="listbox_card_4"></div>
+                <div id="listbox_card_4sp"></div>
+            </div>
+            <div id="card_tab_5" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　回復</div>
+                <div id="listbox_card_5"></div>
+                <div id="listbox_card_5sp"></div>
+            </div>
+            <div id="card_tab_6" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　ガード</div>
+                <div id="listbox_card_6"></div>
+                <div id="listbox_card_6sp"></div>
+            </div>
+            <div id="card_tab_7" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　強化</div>
+                <div id="listbox_card_7"></div>
+                <div id="listbox_card_7sp"></div>
+            </div>
+            <div id="card_tab_8" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　弱体化</div>
+                <div id="listbox_card_8"></div>
+                <div id="listbox_card_8sp"></div>
+            </div>
+            <div id="card_tab_9" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　移動</div>
+                <div id="listbox_card_9"></div>
+                <div id="listbox_card_9sp"></div>
+            </div>
+            <div id="card_tab_10" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　設置</div>
+                <div id="listbox_card_10"></div>
+                <div id="listbox_card_10sp"></div>
+            </div>
+            <div id="card_tab_11" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　カウンター</div>
+                <div id="listbox_card_11"></div>
+                <div id="listbox_card_11sp"></div>
+            </div>
+            <div id="card_tab_12" class="contents_card">
+                <div class="role_index">　<span class="orange_bullet">▼</span>　その他</div>
+                <div id="listbox_card_12"></div>
+                <div id="listbox_card_12sp"></div>
+            </div>
+            <div id="menu4_btntab" class="active">
+                <div class="btn_box">
+                <input type="button" id="card_check_btn" value="一括ON:恒常">
+                <input type="button" id="spcard_check_btn" value="一括ON:コラボ">
+                <input type="button" id="card_uncheck_btn" value="リセット">
+                <input type="button" id="cardtype_select_btn" value="表示変更">
+                </div>
+            </div>
+            <div id="cardtype_selecttab">
+                <div class="btnbox_line">
+                    <input type="button" class="cardtype_select_menu" value="近距離">
+                    <input type="button" class="cardtype_select_menu" value="遠距離">
+                    <input type="button" class="cardtype_select_menu" value="連続">
+                    <input type="button" class="cardtype_select_menu" value="周囲">
+                </div>
+                <div class="btnbox_line">
+                    <input type="button" class="cardtype_select_menu" value="回復">
+                    <input type="button" class="cardtype_select_menu" value="ガード">
+                    <input type="button" class="cardtype_select_menu" value="強化">
+                    <input type="button" class="cardtype_select_menu" value="弱体化">
+                </div>
+                <div class="btnbox_line">
+                    <input type="button" class="cardtype_select_menu" value="移動">
+                    <input type="button" class="cardtype_select_menu" value="設置">
+                    <input type="button" class="cardtype_select_menu" value="カウンター">
+                    <input type="button" class="cardtype_select_menu" value="その他">
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+
+    </div>
+    <div id="menu5_id" class="contents">
+        <div class="background">
+            <input type="button" id="deckmake_btn" value="デッキ生成">
+            <div id="result_hero">
+                
+            </div>
+            <div id="result_card1">
+                
+            </div>
+            <div id="result_card2">
+                
+            </div>
+            <div id="result_card3">
+                
+            </div>
+            <div id="result_card4">
+                
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
