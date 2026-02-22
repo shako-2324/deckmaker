@@ -643,7 +643,7 @@ const deta_roll = function(){
         result_hero.textContent = hero_deta;
         box_hero.push(hero_deta);
     }
-    if (box_card.length<3) {
+    if (box_card.length<4) {
         result_card1.textContent = "カードの選択枚数が不足しています。";
         result_card2.textContent = "";
         result_card3.textContent = "";
