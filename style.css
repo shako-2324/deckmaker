@@ -180,3 +180,15 @@ body{
 #cardtype_selecttab.active{
     display:contents;
 }
+
+/*縦画面設定*/
+
+
+@media (orientation: portrait){
+
+#menu_box{
+    width: 90%;
+
+}
+    
+}
