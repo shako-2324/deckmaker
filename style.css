@@ -1,0 +1,182 @@
+body{
+    background: rgb(171, 171, 171);
+}
+
+/*画面下部のメニュータブ*/
+#menu_background {
+    position:fixed;
+    width:100%;
+    height:50px;
+    left:0%;
+    bottom:2px;
+
+    background-image: linear-gradient(135deg,rgba(0,0,0,0) 40%,rgb(225, 225, 225) 40%,rgb(225, 225, 225) 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 90%,rgb(225, 225, 225) 90%);
+    background-size: 10px 10px;
+}
+#menu_box{
+    position: fixed;
+    width: 50%;
+    height: 48px;
+    left:25%;
+    bottom: 4px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+#menu_box label{
+    line-height: 48px;
+    text-align: center;
+    flex-basis: 19.5%;
+
+
+    color:gray;
+    background-color: white;
+    background-clip: padding-box;
+    border: 2px solid rgba(200, 200, 200, 0.8);
+}
+#menu_box label:has(:checked){
+    color:white;
+    background-color: rgb(255, 145, 0);
+    background-clip: padding-box;
+    border: 2px solid rgba(200, 200, 200, 0.8);
+}
+#menu_box input[type=radio]{
+    display: none;
+}
+
+/*使い方*/
+.menu1_background{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 50%;
+    height: 3000px;
+
+    padding: 0%;
+}
+.menu1_text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    top:100px;
+
+    padding: 5%;
+    background-color: rgb(100, 100, 100);
+    color:white;
+}
+
+.background{
+    width: 50%;
+    border:2px solid rgba(0,0,0,0);
+    margin: auto;
+    height: auto;
+ 
+    background-color: rgb(85, 85, 85);
+}
+
+.space{
+    height: 80px;
+}
+
+
+
+
+
+
+/*-ヒーロー--------------------------------------------------------------------------*/
+
+.role_index{
+    background-color: black;
+    color: white;
+
+    width: 97%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.orange_bullet{
+    color:rgb(255, 145, 0);
+    
+}
+
+
+.checkboxs{
+    display: block;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 93%;
+    background-image: linear-gradient(135deg,rgba(0,0,0,0) 1.5%,gray 1.5%,gray 98.5%,rgba(0,0,0,0) 98.5%);
+    background-size: auto;
+    padding-left: 15px;
+    
+    color:white;
+}
+.checkboxs:has(:checked){
+    background-image: linear-gradient(135deg,rgba(0,0,0,0) 1.5%,rgb(255, 145, 0) 1.5%,rgb(255, 145, 0) 98.5%,rgba(0,0,0,0) 98.5%);
+    background-size: auto;
+    
+    color:white;
+}
+
+.checkboxs input[type=checkbox]{
+    display: none;
+}
+
+.btn_box{
+    position:fixed;
+    right:26%;
+    bottom: 60px;
+
+}
+
+
+/*-カード---------------------------------------------------------------------------*/
+
+.btnbox_line input[type=button]{
+    width: 24%;
+}
+
+
+
+
+
+/*表示画面切り替え*/
+
+.contents{
+    display:none;
+}
+
+.contents.active{
+    display:contents;
+}
+
+/*表示変更（カードタブ）*/
+
+.contents_card{
+    display:none;
+}
+.contents_card.active{
+    display:contents;
+}
+#menu4_btntab{
+    display:none;
+}
+#menu4_btntab.active{
+    display:contents;
+}
+#cardtype_selecttab{
+    display:none;
+}
+#cardtype_selecttab.active{
+    display:contents;
+}
