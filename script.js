@@ -220,6 +220,7 @@ const cardtype_select2 = function(number){
     }
     cardtype_selecttab.classList.add("unactive");
     contents_card[number].classList.add("active");
+    window.scroll({top:0,behavior:"instant"});
 }
 
 cardtype_select_menu[0].addEventListener("click",function(){cardtype_select2(0);});
