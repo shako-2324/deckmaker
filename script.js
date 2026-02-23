@@ -1,12 +1,12 @@
-//内緒やで。ぶっちゃけダサいと思っとんねん、このカスみたいなコード。
+//内緒やで。ぶっちゃけダサいと思っとんねん、このコード。
 
-const hero_attacker_nomal = ["双挽 乃保", "桜華 忠臣", "マルコス'55", "マリア=S=レオンブルク", "アダム=ユーリエフ", "ヴィーナス ポロロッチョ", "デビルミント鬼龍 デルミン", "ルルカ", "狐ヶ咲 甘色", "イグニス=ウィル=ウィスプ", "ステリア・ララ・シルワ", "クー・シー", "コラプス",];
-const hero_attacker_special = ["ソル＝バッドガイ", "リュウ", "レム", "カイ＝キスク", "リヴァイ", "セイバーオルタ", "アイズ・ヴァレンシュタイン", "ノクティス", "キリト", "2B", "リムル=テンペスト", "御坂美琴", "デンジ", "ターニャ・デグレチャフ", "ボンドルド", "ゴン=フリークス", "シャドウ", "アーチャー"];
-const hero_gunner_nomal = ["リリカ","ルチアーノ","深川 まとい","13 †サーティーン†","メグメグ","イスタカ","ソーン=ユーリエフ","HM-WA100 ニーズヘッグ","ゲームバズーカガール","糸廻 輪廻","Bugdoll","天空王 ぶれいずどらごん","みりぽゆ","メルーニャ・ランチェルナ"]
+const hero_attacker_nomal = ["双挽 乃保", "桜華 忠臣", "マルコス'55", "マリア=S=レオンブルク", "アダム=ユーリエフ", "ヴィーナス ポロロッチョ", "デビルミント鬼龍 デルミン", "ルルカ", "狐ヶ咲 甘色", "イグニス=ウィル=ウィスプ", "ステリア・ララ・シルワ", "クー・シー", "コラプス"];
+const hero_attacker_special = ["ソル＝バッドガイ", "リュウ", "レム", "カイ＝キスク", "リヴァイ", "セイバーオルタ", "アイズ・ヴァレンシュタイン", "ノクティス", "キリト", "2B　", "リムル=テンペスト", "御坂美琴", "デンジ", "ターニャ・デグレチャフ", "ボンドルド", "ゴン=フリークス", "シャドウ", "アーチャー"];
+const hero_gunner_nomal = ["リリカ","ルチアーノ","深川 まとい","13 †サーティーン†","メグメグ","イスタカ","ソーン=ユーリエフ","HM-WA100 ニーズヘッグ","ゲームバズーカガール","糸廻 輪廻","Bugdoll　","天空王 ぶれいずどらごん","みりぽゆ","メルーニャ・ランチェルナ"]
 const hero_gunner_special = ["ディズィー","エミリア","鏡音 リン","猫宮ひなた","岡部 倫太郎","ギルガメッシュ","芥川 龍之介","アインズ・ウール・ゴウン","アクセラレータ","ロキシー・ミグルディア","ロックマン.EXE ＆ 光熱斗","シノン","ランサー"]
 const hero_tank_nomal = ["ジャスティス ハンコック","ジャンヌ ダルク","グスタフ ハイドリヒ","ヴィオレッタ ノワール","トマス","青春 アリス","ラヴィ・シュシュマルシュ","アミスター=バランディン","鬼ヶ式 うら"]
 const hero_tank_special = ["鏡音 レン","モノクマ","めぐみん","佐藤四郎兵衛忠信","ライザリン・シュタウト","ポプ子＆ピピ美"]
-const hero_sprinter_nomal = ["十文字 アタリ","Voidoll","ニコラ テスラ","コクリコット ブランシュ","かけだし勇者","輝龍院きらら","零夜","ピエール 77世","アル･ダハブ=アルカティア","某 <なにがし>","チーちゃん","ーペルリニエ"]
+const hero_sprinter_nomal = ["十文字 アタリ","Voidoll　","ニコラ テスラ","コクリコット ブランシュ","かけだし勇者","輝龍院きらら","零夜","ピエール 77世","アル･ダハブ=アルカティア","某 <なにがし>","チーちゃん","ーペルリニエ"]
 const hero_sprinter_special = ["初音 ミク","春麗","ザック＆レイチェル","アクア","中島 敦","ジョーカー","アスナ","ラム","ベル・クラネル","パワー","キルア=ゾルディック","上条当麻","セイバー"]
 
 const card_list_1 = ["UMEEEEEE!!! ㌍伝道 通信教育カラァーテェ","機航師弾 フルーク・ツォイク","荒れ狂う天空王 ぶれいずどらごん","【天罰の熾天使】†ファースト†","反導砲 カノーネ・ファイエル","【デルミン】デビルミント始龍","失われし呪物￤蛇神アペプ","¦¦¦狸ヶ原¦¦¦ 破戒怨士 喰色","‡滅国の城‡双生王 レヴィ・シュシュマルシュ","雷霊の加護 ワキンヤン","せかいをはかい！恐怖の大魔王"];
@@ -58,12 +58,18 @@ const btn_menu1 = document.getElementById("radio_menu_1"); const btn_menu2 = doc
 const contents_1 = document.getElementById("menu1_id"); const contents_2 = document.getElementById("menu2_id"); const contents_3 = document.getElementById("menu3_id"); const contents_4 = document.getElementById("menu4_id"); const contents_5 = document.getElementById("menu5_id");
 
 const RemoveActiveClassFunction = function () {
+    window.scroll({top:0,behavior:"instant"});
     contents_1.classList.remove("active");
     contents_2.classList.remove("active");
     contents_3.classList.remove("active");
     contents_4.classList.remove("active");
     contents_5.classList.remove("active");
-    code_output.textContent ="";
+    code_output.textContent ="　";
+    result_hero.textContent = "　";
+    result_card1.textContent = "　";
+    result_card2.textContent = "　";
+    result_card3.textContent = "　";
+    result_card4.textContent = "　";  
 }
 
 btn_menu1.addEventListener("click", function () { RemoveActiveClassFunction(); contents_1.classList.add("active"); });
@@ -195,7 +201,6 @@ const listbox_card_12sp = document.getElementById("listbox_card_12sp");i=0;while
 
 //表示変更ボタン
 const cardtype_select_btn = document.getElementById("cardtype_select_btn");
-const menu4_btntab = document.getElementById("menu4_btntab");
 const cardtype_selecttab = document.getElementById("cardtype_selecttab");
 const contents_card = document.getElementsByClassName("contents_card");
 
@@ -204,18 +209,16 @@ cardtype_select_btn.addEventListener("click",function(){
 });
 
 const cardtype_select = function(){
-    for (i=0;i<12;i=i+1){
-        contents_card[i].classList.remove("active");
-    }
-    menu4_btntab.classList.remove("active");
-    cardtype_selecttab.classList.add("active");
+    cardtype_selecttab.classList.remove("unactive");
 }
 
 const cardtype_select_menu = document.getElementsByClassName("cardtype_select_menu");
 
 const cardtype_select2 = function(number){
-    cardtype_selecttab.classList.remove("active");
-    menu4_btntab.classList.add("active");
+    for (i=0;i<12;i=i+1){
+        contents_card[i].classList.remove("active");
+    }
+    cardtype_selecttab.classList.add("unactive");
     contents_card[number].classList.add("active");
 }
 
@@ -333,6 +336,16 @@ save_btn.addEventListener('click', function(){
     deta_save();
 });
 
+const save_code_btn = document.getElementById("save_code_btn");
+
+save_code_btn.addEventListener('click',function(){
+    codetoclipboard();
+})
+
+const codetoclipboard = function(){
+    let code=code_output.innerText;
+    navigator.clipboard.writeText(code);
+}
 
 //code1~8:ヒーロー 9~32:カード 
 const deta_save = function () {
@@ -630,6 +643,7 @@ const result_card2 = document.getElementById("result_card2");
 const result_card3 = document.getElementById("result_card3");
 const result_card4 = document.getElementById("result_card4");
 const deckmake_btn = document.getElementById("deckmake_btn");
+const role_results = document.getElementsByClassName("role_results")
 
 deckmake_btn.addEventListener('click',function(){
     deta_roll();
@@ -637,18 +651,44 @@ deckmake_btn.addEventListener('click',function(){
 
 const deta_roll = function(){
     if (box_hero.length<1) {
-        result_hero.textContent = "ヒーローを選択していません。";
+        role_results[0].classList.add("color_gray");
+        result_hero.textContent = "ヒーローが選択されていません。";
+        setTimeout(function(){role_results[0].classList.remove("color_gray");},500);
     } else {
+        role_results[0].classList.add("color_gray");
         hero_deta = box_hero.splice(Math.floor(Math.random()*box_hero.length),1);
         result_hero.textContent = hero_deta;
         box_hero.push(hero_deta);
+        setTimeout(function(){role_results[0].classList.remove("color_gray");},500);
     }
     if (box_card.length<4) {
+        
+        role_results[1].classList.add("color_gray");
+        role_results[2].classList.add("color_gray");
+        role_results[3].classList.add("color_gray");
+        role_results[4].classList.add("color_gray");
         result_card1.textContent = "カードの選択枚数が不足しています。";
-        result_card2.textContent = "";
-        result_card3.textContent = "";
-        result_card4.textContent = "";  
+        result_card2.textContent = "カードの選択枚数が不足しています。";
+        result_card3.textContent = "カードの選択枚数が不足しています。";
+        result_card4.textContent = "カードの選択枚数が不足しています。";
+        setTimeout(function(){
+            role_results[1].classList.remove("color_gray");
+        },1000);
+        setTimeout(function(){
+            role_results[2].classList.remove("color_gray");
+        },1500);
+        setTimeout(function(){
+            role_results[3].classList.remove("color_gray");
+        },2000);
+        setTimeout(function(){
+            role_results[4].classList.remove("color_gray");
+        },2500);
+
     } else {
+        role_results[1].classList.add("color_gray");
+        role_results[2].classList.add("color_gray");
+        role_results[3].classList.add("color_gray");
+        role_results[4].classList.add("color_gray");
         card_deta[0] = box_card.splice(Math.floor(Math.random()*box_card.length),1);
         card_deta[1] = box_card.splice(Math.floor(Math.random()*box_card.length),1);
         card_deta[2] = box_card.splice(Math.floor(Math.random()*box_card.length),1);
@@ -661,6 +701,18 @@ const deta_roll = function(){
         box_card.push(card_deta[1]);
         box_card.push(card_deta[2]);
         box_card.push(card_deta[3]);
+        setTimeout(function(){
+            role_results[1].classList.remove("color_gray");
+        },1000);
+        setTimeout(function(){
+            role_results[2].classList.remove("color_gray");
+        },1500);
+        setTimeout(function(){
+            role_results[3].classList.remove("color_gray");
+        },2000);
+        setTimeout(function(){
+            role_results[4].classList.remove("color_gray");
+        },2500);
     }
 
 
@@ -751,3 +803,4 @@ const deta_set = function(){
 
  
 }
+
