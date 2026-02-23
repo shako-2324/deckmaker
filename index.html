@@ -11,38 +11,79 @@
 <body>
     <div id="menu_background">
         <ul id="menu_box">
-            <label><li><input type="radio" name="menu" value="1" id="radio_menu_1">使い方</li></label>
-            <label><li><input type="radio" name="menu" value="2" id="radio_menu_2">セーブ</li></label>
+            <label><li><input type="radio" name="menu" value="1" id="radio_menu_1" checked>使い方</li></label>
+            <label><li><input type="radio" name="menu" value="5" id="radio_menu_5">生成</li></label>
             <label><li><input type="radio" name="menu" value="3" id="radio_menu_3">ヒーロー</li></label>
             <label><li><input type="radio" name="menu" value="4" id="radio_menu_4">カード</li></label>
-            <label><li><input type="radio" name="menu" value="5" id="radio_menu_5">生成</li></label>
+            <label><li><input type="radio" name="menu" value="2" id="radio_menu_2">セーブ</li></label>
         </ul>
     </div>
-    <div id="menu1_id" class="contents">
+    <div id="menu1_id" class="contents active">
 
         <div class="menu1_background">
             <br>
             <div class="menu1_text">
-                <h1>見出し</h1>
-                <h2>説明</h2>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="menu2_id" class="contents">
-        <div class="background">
-            <input type="button" id="save_btn" value="書き出し">
-            <div id="code_output">
-
-            </div>
-            <input type="text" id="load_text">
-            <input type="button" id="load_btn" value="読み込み">
-            <div id="code_input">
-
+                <h1 class="text_center">ランダムデッキメーカー</h1>
+                <h2 class="text_right">for コンパス</h2>
+                <br>
+                <h2 class="text_orange">■ 生成</h2>
+                <h3>
+                    選択したヒーロー、カードから、ランダムに抽選しデッキを生成します。
+                </h3>
+                <h2 class="text_orange">■ ヒーロー</h2>
+                <h3>
+                    抽選対象にするヒーローを選択できます。
+                </h3>
+                <h2 class="text_orange">■ カード</h2>
+                <h3>
+                    抽選対象にするカードを選択できます。
+                </h3>
+                <h2 class="text_orange">■ セーブ</h2>
+                <h3>
+                    データ保存用のコードを、書き出すことができます。<br>
+                    再利用時にコードを読み込ませることで、ヒーローやカードの選択状況を復元できます。
+                </h3>
             </div>
             <div class="space"></div>
         </div>
+
+    </div>
+
+    <div id="menu2_id" class="contents">
+        <div class="background_menu2">
+            <br>
+            <label>
+                <div id="output_box">
+                    <div id="code_output"></div>
+                    <input type="button" id="save_code_btn">
+                    <div class="right_box">
+                        <div class="text_right menu2_addtext">タップでコピー</div>
+                    </div>
+                </div>
+            </label>
+            <br>
+            <div class="saveload_btnbox">
+                <input type="button" id="save_btn" class="saveload_btn" value="書き出し">
+            </div>
+            <br>
+            
+        </div>
+        <br>
+        <div class="background_menu2">
+            <br>
+            <div id="input_box">
+                <input type="text" id="load_text">
+                <div class="right_box">
+                    <div class="text_right menu2_addtext2">ここに張り付けて読み込み</div>
+                </div>
+            </div>
+            <br>
+            <div class="saveload_btnbox">
+                <input type="button" id="load_btn"  class="saveload_btn" value="読み込み">
+            </div>
+            <br>
+        </div>
+        <div class="space"></div>
     </div>
     <div id="menu3_id" class="contents">
         <div class="background">
@@ -68,7 +109,7 @@
         
     </div>
     <div id="menu4_id" class="contents">
-        <div class="background">
+        <div id="background_menu4">
             <div id="card_tab_1" class="contents_card active">
                 <div class="role_index">　<span class="orange_bullet">▼</span>　近距離</div>
                 <div id="listbox_card_1"></div>
@@ -134,53 +175,66 @@
                 <input type="button" id="card_check_btn" value="一括ON:恒常">
                 <input type="button" id="spcard_check_btn" value="一括ON:コラボ">
                 <input type="button" id="card_uncheck_btn" value="リセット">
-                <input type="button" id="cardtype_select_btn" value="表示変更">
+                <input type="button" id="cardtype_select_btn" value="表示切替">
                 </div>
             </div>
-            <div id="cardtype_selecttab">
+            
+            <div class="space"></div>
+        </div>
+        <div id="cardtype_selecttab" class="unactive">
+            
+            <div id="cardtype_selecttab2">
+                <div class="space_1"></div>
                 <div class="btnbox_line">
                     <input type="button" class="cardtype_select_menu" value="近距離">
                     <input type="button" class="cardtype_select_menu" value="遠距離">
                     <input type="button" class="cardtype_select_menu" value="連続">
                     <input type="button" class="cardtype_select_menu" value="周囲">
                 </div>
+                <div class="space_2"></div>
                 <div class="btnbox_line">
                     <input type="button" class="cardtype_select_menu" value="回復">
                     <input type="button" class="cardtype_select_menu" value="ガード">
                     <input type="button" class="cardtype_select_menu" value="強化">
                     <input type="button" class="cardtype_select_menu" value="弱体化">
                 </div>
+                <div class="space_2"></div>
                 <div class="btnbox_line">
                     <input type="button" class="cardtype_select_menu" value="移動">
                     <input type="button" class="cardtype_select_menu" value="設置">
                     <input type="button" class="cardtype_select_menu" value="カウンター">
                     <input type="button" class="cardtype_select_menu" value="その他">
                 </div>
+                <div class="space_1"></div>
             </div>
-            <div class="space"></div>
         </div>
-
     </div>
     <div id="menu5_id" class="contents">
         <div class="background">
-            <input type="button" id="deckmake_btn" value="デッキ生成">
-            <div id="result_hero">
-                
-            </div>
-            <div id="result_card1">
-                
-            </div>
-            <div id="result_card2">
-                
-            </div>
-            <div id="result_card3">
-                
-            </div>
-            <div id="result_card4">
-                
-            </div>
+            <div class="role_index">　<span class="orange_bullet">▼</span>　ヒーロー</div>
+            <label class="role_results">
+                <div id="result_hero">　</div>
+            </label>
+
+            <div class="role_index">　<span class="orange_bullet">▼</span>　カード</div>
+            <label class="role_results">
+                <div id="result_card1">　</div>
+            </label>
+            <label class="role_results">
+                <div id="result_card2">　</div>
+            </label>
+            <label class="role_results">
+                <div id="result_card3">　</div>
+            </label>
+            <label class="role_results">
+                <div id="result_card4">　</div>
+            </label>
+            <div class="space"></div>
             <div class="space"></div>
         </div>
+            <div id="deckmake_btnbox">
+                <input type="button" id="deckmake_btn" value="デッキ生成">
+            </div>
     </div>
 
 
