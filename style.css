@@ -306,7 +306,7 @@ body{
 /*-セーブ---------------------------------------------------------------------------*/
 .background_menu2{
     width: 50%;
-    border:2px solid rgba(101, 4, 4);
+    border:0 none rgba(0,0,0,0);
     margin: auto;
     height: auto;
 
